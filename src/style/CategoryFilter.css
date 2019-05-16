@@ -1,0 +1,19 @@
+
+.categoryFilter h3{
+  display: inline-block;
+  margin: 0;  
+  padding: 0 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  border-left: solid 1px #000;
+}
+.categoryFilter a:visited{
+  color: #000;
+}
+.categoryFilter a:first-child h3{
+  border: none;
+  padding-left: 0;
+}
+.categoryFilter .current{
+  text-decoration: underline;
+}
