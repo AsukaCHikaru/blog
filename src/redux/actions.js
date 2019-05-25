@@ -1,9 +1,9 @@
-import { SET_CATEGORY, IMPORT_POSTDATA, SET_POSTCONTEXT } from './actionTypes';
+import { SET_POST_FILTER, IMPORT_POSTDATA, SET_POSTCONTEXT } from './actionTypes';
 
-export const setCategory = category => ({
-  type: SET_CATEGORY,
+export const setPostFilter = ({type, context}) => ({
+  type: SET_POST_FILTER,
   payload: {
-    category
+    postFilter: { type, context }
   }
 });
 

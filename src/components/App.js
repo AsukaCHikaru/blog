@@ -9,15 +9,12 @@ import Footer from './Footer';
 import '../style/App.css';
 
 export default function App() {
-  
-  
   return (
     <div className="app">
-      <Route path="/(category|)" component={Header}/>
-      <Route path="/(category|)" component={PostList} />
+      <Route path="/(category|tag|)" component={Header}/>
+      <Route path="/(category|tag|)/" component={PostList} />
       <Route strict path="/post/" component={PostContext} />
       <Footer />
     </div>
-  )
-  
+  )  
 }

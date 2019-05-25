@@ -1,23 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setCategory } from '../redux/actions';
-import { BLOG_NAME, CATEGORIES } from '../constants';
+import { setPostFilter } from '../redux/actions';
+import { BLOG_NAME, CATEGORIES, POST_FILTER_TYPES } from '../constants';
 
 import CategoryFilter from './CategoryFilter';
 
 import '../style/Header.css';
 
 const mapDispatchToProps = {
-  setCategory
+  setPostFilter
 }
 
-const Header = ({ setCategory }) => {
+const Header = ({ setPostFilter }) => {
   return (
     <header>
       <Link 
         to="/" 
-        onClick={() => setCategory(CATEGORIES.ALL)} 
+        onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: CATEGORIES.ALL})} 
       >
         <h1 >{BLOG_NAME}</h1>
       </Link>

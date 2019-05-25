@@ -54,6 +54,11 @@ header h1{
 .postlist{
   flex: 1 0 auto;
 }
+.postlist .tagFilterResult{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.7em;
+  color: #555;
+}
 .postlink{
   margin: 1.5em 0;
 }

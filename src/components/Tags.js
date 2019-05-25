@@ -1,12 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-const Tags = props => {
-  const node = props.tags.map((tag, i) => {
+import { setPostFilter } from '../redux/actions';
+import { POST_FILTER_TYPES } from '../constants';
+
+const mapStateToProps = (state, ownProps) => {
+  const { postFilter } = state;    
+  const { tags } = ownProps;
+  return { tags, postFilter };
+}
+
+const mapDispatchToProps = {
+  setPostFilter
+}
+
+const Tags = ({ tags, setPostFilter}) => {
+  const node = tags.map((tag, i) => {
     const path = `/tag/${tag.toLowerCase()}`
     return (
-      <Link to={path} key={`tag-${i}`}>
-        <span >#{tag}</span>
+      <Link 
+        to={path} 
+        key={`tag-${i}`}
+        onClick={() => setPostFilter({type: POST_FILTER_TYPES.TAG, context: tag})}
+        >
+        <span 
+        >#{tag}</span>
       </Link>
     )
   });
@@ -22,4 +41,4 @@ Tags.defaultProps = {
 }
 
 
-export default Tags
+export default connect(mapStateToProps, mapDispatchToProps)(Tags);

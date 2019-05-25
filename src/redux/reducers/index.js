@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import category from './category';
+import postFilter from './postFilter';
 import posts from './posts';
 
-export default combineReducers({ posts, category });
+export default combineReducers({ posts, postFilter });

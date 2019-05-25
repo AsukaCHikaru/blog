@@ -1,3 +1,8 @@
+export const POST_FILTER_TYPES = {
+  CATEGORY: 'category',
+  TAG: 'tag',
+};
+
 export const CATEGORIES = {
   ALL: 'all',
   OTHERS: 'others',

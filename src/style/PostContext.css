@@ -61,6 +61,10 @@ article pre code{
 blockquote p:first-child{
   display: inline;
 }
+blockquote p{
+  font-style: italic;
+  color: #555;
+}
 article iframe{
   outline: none;
   border: none;

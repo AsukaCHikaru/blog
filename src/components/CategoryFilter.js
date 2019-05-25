@@ -2,22 +2,22 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { setCategory } from '../redux/actions';
-import { CATEGORIES, CATEGORY_NAMES } from '../constants';
+import { setPostFilter } from '../redux/actions';
+import { POST_FILTER_TYPES, CATEGORIES, CATEGORY_NAMES } from '../constants';
 
 import '../style/CategoryFilter.css';
 
 const mapStateToProps = state => {
-  const { category } = state;    
-  return { category };
+  const { postFilter } = state;    
+  return { postFilter };
 }
 const mapDispatchToProps = {
-  setCategory
+  setPostFilter
 }
 
-const CategoryFilter = ({ category, setCategory }) => {
-  const node = Object.keys(CATEGORIES).map((ele, i) => {
-    const thisCategory = CATEGORIES[ele];
+const CategoryFilter = ({ postFilter, setPostFilter }) => {
+  const node = Object.keys(CATEGORIES).map((category, i) => {
+    const thisCategory = CATEGORIES[category];
     const path = (thisCategory==='all') ? '/' : `/category/${thisCategory}`
     return (
       <Link 
@@ -25,10 +25,10 @@ const CategoryFilter = ({ category, setCategory }) => {
         key={`cat-${i}`}         
       >
         <h3
-          className={(thisCategory===category) ? 'current category' : 'category'}
-          onClick={() => setCategory(thisCategory)}
+          className={(thisCategory===postFilter.context) ? 'current category' : 'category'}
+          onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: thisCategory})}
         >
-          {CATEGORY_NAMES[ele].toUpperCase()}
+          {CATEGORY_NAMES[category].toUpperCase()}
         </h3> 
       </Link>      
     )
