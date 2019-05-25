@@ -4,7 +4,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        footer
+        © 2019 <a href="https://asukachikaru.com">asukachikaru.com</a>
       </footer>
     )
   }

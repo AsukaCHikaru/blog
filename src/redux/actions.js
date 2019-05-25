@@ -1,4 +1,4 @@
-import { SET_CATEGORY, IMPORT_POSTDATA, GET_POSTS } from './actionTypes';
+import { SET_CATEGORY, IMPORT_POSTDATA, SET_POSTCONTEXT } from './actionTypes';
 
 export const setCategory = category => ({
   type: SET_CATEGORY,
@@ -14,9 +14,9 @@ export const importPostData = posts => ({
   }
 });
 
-export const getPosts = category => ({
-  type: GET_POSTS,
+export const setPostContext = postContext => ({
+  type: SET_POSTCONTEXT,
   payload: {
-    category
+    postContext
   }
 });

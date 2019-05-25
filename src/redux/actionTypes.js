@@ -1,3 +1,3 @@
 export const SET_CATEGORY = 'SET_CATEGORY';
 export const IMPORT_POSTDATA = 'IMPORT_POSTDATA';
-export const GET_POSTS = 'GET_POSTS';
+export const SET_POSTCONTEXT = 'SET_POSTCONTEXT';

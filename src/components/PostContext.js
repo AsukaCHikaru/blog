@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
+// import { connect } from 'react-redux';
 import marked from 'marked';
+
+import Tags from './Tags';
+
+import handleContext from '../logic/handleContext';
 
 import '../style/PostContext.css';
 
@@ -11,8 +16,15 @@ export default class Post extends Component {
   constructor(props){
     super(props);
     this.state = {
-      content: null,
+      date: null,
+      tags: [],
+      title: null,
+      context: null,
     }
+  }
+
+  componentWillMount(){
+    if(this.state.context===null) this.fetch();
   }
   fetch(){
     const fileName = this.props.location.pathname.replace(/\/post\/(.+)/, '$1');
@@ -21,16 +33,24 @@ export default class Post extends Component {
       .then(data => {
         return data.text();
       }).then(text => {
-        this.setState({content: marked(text)})
+        const context = handleContext(marked(text));
+        
+        const title = RegExp(/title:\s"(.+)"/).exec(text)[1];
+        const date = RegExp(/date:\s(.+)/).exec(text)[1];
+        const tags = RegExp(/tags:\s(.+)/).exec(text)[1].split(/,\s*/);
+        this.setState({context, title, date, tags });
       });
   }
   render() {
-    if(this.state.content===null) this.fetch();
+    
     return (
-      <div>
-        <h2></h2>
-
-        <article dangerouslySetInnerHTML={{__html: this.state.content}}></article>
+      <div className="postcontext">
+        <header>
+          <h1>{this.state.title}</h1>
+          <h3 className="date">{this.state.date}</h3>
+          <Tags tags={this.state.tags} />
+        </header>
+        <article dangerouslySetInnerHTML={{__html: this.state.context}} />
       </div>
       
     )

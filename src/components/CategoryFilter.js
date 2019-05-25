@@ -18,14 +18,14 @@ const mapDispatchToProps = {
 const CategoryFilter = ({ category, setCategory }) => {
   const node = Object.keys(CATEGORIES).map((ele, i) => {
     const thisCategory = CATEGORIES[ele];
-    const path = `/category/${thisCategory}`
+    const path = (thisCategory==='all') ? '/' : `/category/${thisCategory}`
     return (
       <Link 
         to={path} 
         key={`cat-${i}`}         
       >
-        <h3 
-          className={(thisCategory===category) ? 'current' : ''}
+        <h3
+          className={(thisCategory===category) ? 'current category' : 'category'}
           onClick={() => setCategory(thisCategory)}
         >
           {CATEGORY_NAMES[ele].toUpperCase()}

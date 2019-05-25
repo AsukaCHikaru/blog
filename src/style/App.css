@@ -1,7 +1,104 @@
-body{
-  padding: 0 10vw;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100&subset=japanese');
+
+html, body{
+  margin: 0;
+  background-color: #eee;
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vw;
+  height: 100%;  
 }
 
+header{
+  margin: 2.5em 0 1em 0;
+}
+
+header a{
+  color: #000;
+  text-decoration: none;
+}
+header a:visited{
+  color: #000;
+}
+header h1{
+  font-size: 3em;
+  margin: 0 0 0.2em 0;
+}
+
+.categoryFilter .category{
+  display: inline-block;
+  margin: 0;  
+  padding: 0 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  border-left: solid 1px #000;
+  color: #777;
+}
+.categoryFilter a:visited{
+  color: #777;
+}
+.categoryFilter a:first-child h3{
+  border: none;
+  padding-left: 0;
+}
+.categoryFilter .current{
+  color: #000;
+  text-decoration: underline;
+}
 .postlist{
-  padding-top: 2em;
+  flex: 1 0 auto;
+}
+.postlink{
+  margin: 1.5em 0;
+}
+.postlink h2{
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 2.1em;
+  color: #000;
+  cursor: pointer;
+}
+.postlink .postmeta{
+  /* display: inline-block; */
+}
+.postlink .date, .postlink .tags span{
+  display: inline-block;
+  margin: 0 0.6em;
+  font-size: 1em;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  color: #555;
+}
+.postlink .date{
+  margin-left: 0;
+  font-weight: 700;
+}
+.postlink .tags{
+  display: inline-block;
+}
+.postlink .tags span:first-child{
+  margin-left: 0;
+}
+.postlink .tags span:hover{
+  text-decoration: underline;
+}
+
+footer{
+  flex-shrink: 0;
+  padding: 2em 0 1em 0; 
+  font-family: 'Courier New', Courier, monospace;  
+}
+footer a, footer a:visited{
+  color: #000;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
 }

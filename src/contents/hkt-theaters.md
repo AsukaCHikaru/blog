@@ -2,9 +2,8 @@ author: asukachikaru
 date: 2018-09-30
 title: "淺談劇場"
 slug: hkt-theaters
-tags: 
-  -HKT48
-catogories: life
+tags: HKT48
+category: others
 
 
 簡單談談HKT的四個劇場。

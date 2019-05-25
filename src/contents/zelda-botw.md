@@ -2,11 +2,8 @@ author: asukachikaru
 date: 2018-12-16
 title: "Zelda: Breath of the Wild"
 slug: zelda-botw
-tags: 
-  -Switch
-  -RPG
-  -review
-catogories: game
+tags: Switch, Review
+category: game
 
 
 先說結論，我並不享受這個遊戲。
