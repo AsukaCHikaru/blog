@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
-// import { connect } from 'react-redux';
-import marked from 'marked';
 
 import Tags from './Tags';
+import ToMainViewNav from './ToMainViewNav';
 
 import handleContext from '../logic/handleContext';
 
 import '../style/PostContext.css';
-
-marked.setOptions({
-  headerIds: false,
-});
 
 export default class Post extends Component {
   constructor(props){
@@ -20,6 +15,7 @@ export default class Post extends Component {
       tags: [],
       title: null,
       context: null,
+      category: null,
     }
   }
 
@@ -33,16 +29,15 @@ export default class Post extends Component {
       .then(data => {
         return data.text();
       }).then(text => {
-        const context = handleContext(marked(text));
-        
+        const context = handleContext(text);        
         const title = RegExp(/title:\s"(.+)"/).exec(text)[1];
         const date = RegExp(/date:\s(.+)/).exec(text)[1];
-        const tags = RegExp(/tags:\s(.+)/).exec(text)[1].split(/,\s*/);
-        this.setState({context, title, date, tags });
+        const category = RegExp(/category:\s(.+)/).exec(text)[1];
+        const tags = (RegExp(/tags:\s(.+)/).exec(text)) ? RegExp(/tags:\s(.+)/).exec(text)[1].split(/,\s*/) : [];
+        this.setState({context, title, date, tags, category });
       });
   }
   render() {
-    
     return (
       <div className="postcontext">
         <header>
@@ -51,6 +46,7 @@ export default class Post extends Component {
           <Tags tags={this.state.tags} />
         </header>
         <article dangerouslySetInnerHTML={{__html: this.state.context}} />
+        <ToMainViewNav category={this.state.category} />
       </div>
       
     )

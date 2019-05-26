@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&subset=japanese');
 
 html, body{
   margin: 0;
@@ -83,7 +83,7 @@ header h1{
 }
 .postlink .date{
   margin-left: 0;
-  font-weight: 700;
+  font-weight: 400;
 }
 .postlink .tags{
   display: inline-block;
@@ -97,7 +97,7 @@ header h1{
 
 footer{
   flex-shrink: 0;
-  padding: 2em 0 1em 0; 
+  margin: 1em 0;
   font-family: 'Courier New', Courier, monospace;  
 }
 footer a, footer a:visited{

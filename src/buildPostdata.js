@@ -16,7 +16,7 @@ function buildPostdata() {
         if(err) throw err;
         const date = RegExp(/date:\s(.+)/).exec(data)[1];
         const title = RegExp(/title:\s"(.+)"/).exec(data)[1];
-        const tags = RegExp(/tags:\s(.+)/).exec(data)[1].split(/,\s*/);
+        const tags = (RegExp(/tags:\s(.+)/).exec(data)) ? RegExp(/tags:\s(.+)/).exec(data)[1].split(/,\s*/) : [];
         const category = RegExp(/category:\s(.+)/).exec(data)[1];
         result.all[i].date = date;
         result.all[i].title = title;

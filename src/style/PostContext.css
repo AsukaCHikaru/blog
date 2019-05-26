@@ -39,6 +39,17 @@ article{
 article p:first-child{
   display: none;
 }
+article h3{
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+article a{
+  color: #0d69da;
+  text-decoration: none;
+}
+article a:hover{
+  text-decoration: underline;
+}
 article code{
   padding: 0 0.2em;
   line-height: 0.5em;
@@ -58,6 +69,10 @@ article pre {
 article pre code{
   border: none;
 }
+article hr{
+  margin: 2em auto;
+  width: 20%;
+}
 blockquote p:first-child{
   display: inline;
 }
@@ -75,4 +90,23 @@ article iframe{
   margin: 0 auto;
   width: 55vw; 
   height: 30.1vw;
+}
+.postcontext nav{
+  display: block;
+  margin-top: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+}
+.postcontext nav a, .postcontext nav a:visited{
+  color: #000;
+  text-decoration: none;
+}
+.postcontext nav a:hover{
+  text-decoration: underline;
+}
+.postcontext nav span{
+  margin: 0 0.5em;
+}
+.postcontext nav span:first-child{
+  margin-left: 0;
 }
