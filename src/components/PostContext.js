@@ -24,7 +24,7 @@ export default class Post extends Component {
   }
   fetch(){
     const fileName = this.props.location.pathname.replace(/\/post\/(.+)/, '$1');
-    const path = require( `../contents/${fileName}.md`);
+    const path = require( `../contents/${fileName}/${fileName}.md`);
     fetch(path)
       .then(data => {
         return data.text();

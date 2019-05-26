@@ -4,9 +4,9 @@ const path = __dirname + '/contents';
 
 function buildPostdata() {
   let result = {all: []};
-  fs.readdir(path, (err, files) => {
-    files.forEach((file) => {      
-      result.all.push({path: file});
+  fs.readdir(path, (err, folders) => {
+    folders.forEach((folder) => {      
+      if(folder!=='.DS_Store') result.all.push({path: `${folder}/${folder}.md`});
     });
 
     let len = result.all.length;

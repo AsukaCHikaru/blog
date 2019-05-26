@@ -6,7 +6,7 @@ import { setPostFilter } from '../redux/actions';
 
 const mapStateToProps = (state, ownProps) => {
   const { category } = ownProps;
-  return category;
+  return { category };
 }
 
 const mapDispatchToProps = {

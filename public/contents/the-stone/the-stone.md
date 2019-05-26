@@ -47,4 +47,6 @@ category: game
 
 該說我內心早就猜到了嗎？
 
+(pic1)
+
 我的下一隻main就是Taliyah。

@@ -47,6 +47,11 @@ article a{
   color: #0d69da;
   text-decoration: none;
 }
+article .imgWrapper{
+  margin: 0 auto;
+  width: 55vw;
+  text-align: center;
+}
 article a:hover{
   text-decoration: underline;
 }
@@ -93,7 +98,7 @@ article iframe{
 }
 .postcontext nav{
   display: block;
-  margin-top: 2em;
+  margin: 3em 0 1em 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.2em;
 }
