@@ -6,8 +6,6 @@ import { BLOG_NAME, CATEGORIES, POST_FILTER_TYPES } from '../constants';
 
 import CategoryFilter from './CategoryFilter';
 
-import '../style/Header.css';
-
 const mapDispatchToProps = {
   setPostFilter
 }

@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700,900&display=swap');
 
 html, body{
   margin: 0;
-  background-color: #eee;
   height: 100%;
+  background-color: #eee;
+  font-family: serif;
 }
 #root{
   height: 100%;
@@ -28,6 +30,7 @@ header a:visited{
 }
 header h1{
   font-size: 3em;
+  font-weight: 900;
   margin: 0 0 0.2em 0;
 }
 
@@ -106,4 +109,25 @@ footer a, footer a:visited{
 }
 footer a:hover{
   text-decoration: underline;
+}
+
+@media all and (max-width: 1200px){
+  .app{
+    font-size: 13px;
+    padding: 0 10.5vw;
+  }
+}
+
+@media all and (max-width: 768px){
+  .app{
+    font-size: 12px;
+    padding: 0 10vw;
+  }
+}
+
+@media all and (max-width: 420px){
+  .app{
+    font-size: 10px;
+    padding: 0 5vw;
+  }
 }

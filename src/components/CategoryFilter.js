@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { setPostFilter } from '../redux/actions';
 import { POST_FILTER_TYPES, CATEGORIES, CATEGORY_NAMES } from '../constants';
 
-import '../style/CategoryFilter.css';
-
 const mapStateToProps = state => {
   const { postFilter } = state;    
   return { postFilter };
