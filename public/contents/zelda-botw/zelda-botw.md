@@ -3,7 +3,7 @@ date: 2018-12-16
 title: "Zelda: Breath of the Wild"
 slug: zelda-botw
 tags: Switch, Review
-category: game
+category: gaming
 
 
 先說結論，我並不享受這個遊戲。

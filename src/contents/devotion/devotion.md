@@ -3,7 +3,7 @@ date: 2019-03-04
 title: "Devotion"
 slug: devotion
 tags: Indie, Review
-category: game
+category: gaming
 
 我不看恐怖電影也不玩恐怖遊戲(Bio Hazard系列是唯一的例外)，但由於前作的高評價，新作的話題性以及一時興起，我也搶在 《還願》 臨時下架之前品嚐了這個作品。
 

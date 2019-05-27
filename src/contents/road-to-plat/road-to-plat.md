@@ -3,7 +3,7 @@ date: 2016-11-06
 title: "Road to plat"
 slug: road-to-plat
 tags: League of Legends
-category: game
+category: gaming
 
 2016/11/5，我上白金了。稍微意外地，這是玩LOL六年來第一次。我雖然不是什麼每天都要打三場的重度玩家，但好歹也持續玩了六年，對各種職業隊伍更是如數家珍，可以算是個標準的LOL迷了。但事實就是這樣，我也不想說什麼之前我也做得到只是沒盡力的屁話。從技術上，心態上，理解上，對遊戲的熱情各方面來說，S6是我第一次能夠攀上白金門檻。
 

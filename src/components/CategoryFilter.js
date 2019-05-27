@@ -26,7 +26,7 @@ const CategoryFilter = ({ postFilter, setPostFilter }) => {
           className={(thisCategory===postFilter.context) ? 'current category' : 'category'}
           onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: thisCategory})}
         >
-          {CATEGORY_NAMES[category].toUpperCase()}
+          {CATEGORIES[category].toUpperCase()}
         </h3> 
       </Link>      
     )

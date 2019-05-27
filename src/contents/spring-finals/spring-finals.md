@@ -3,7 +3,7 @@ date: 2017-04-24
 title: "Spring Finals"
 slug: spring-finals
 tags: League of Legends, TSM, LOL Esports
-category: game
+category: gaming
 
 寫在TSM擊敗C9，第五度贏得NALCS Championship之後。
 

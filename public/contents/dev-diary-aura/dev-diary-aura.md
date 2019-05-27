@@ -3,7 +3,7 @@ date: 2018-05-28
 title: "Dev Diary: Aura"
 slug: dev-diary-aura
 tags: Game Design
-category: game
+category: gaming
 
 在最近進行的side project中刻了一個靈氣(aura)輪子。比我想像中的麻煩，決定動筆記錄一下。
 
