@@ -20,7 +20,7 @@ const CategoryFilter = ({ postFilter, setPostFilter }) => {
     return (
       <Link 
         to={path} 
-        key={`cat-${i}`}         
+        key={`cat-${i}`}      
       >
         <h3
           className={(thisCategory===postFilter.context) ? 'current category' : 'category'}

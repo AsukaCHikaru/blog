@@ -16,12 +16,7 @@ const mapDispatchToProps = {
 }
 
 const Header = ({ postFilter, setPostFilter }) => {
-  const title = (
-    postFilter.type === POST_FILTER_TYPES.TAG ||
-    postFilter.type===POST_FILTER_TYPES.CATEGORY && postFilter.context===CATEGORIES.ALL) ?
-    BLOG_NAME :
-    CATEGORY_NAMES[postFilter.context.toUpperCase()]+'.'
-  ;
+  const title = BLOG_NAME;
   return (
     <header>
       <Link 
