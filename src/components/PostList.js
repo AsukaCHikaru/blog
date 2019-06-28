@@ -2,7 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { CATEGORIES, POST_FILTER_TYPES } from '../constants';
+import { CATEGORIES, POST_FILTER_TYPES, CATEGORY_NAMES } from '../constants';
 import { setPostFilter } from '../redux/actions';
 import PostLink from './PostLink';
 
@@ -50,7 +50,7 @@ const PostList = ({ posts, postFilter, location, setPostFilter }) => {
   const node = filterPost(posts, postFilter).map((post, i) => {
     return <PostLink key={`post-${i}`} post={post} />;    
   });
-
+  
   return (
     <div className="postlist">
       <Route path="/tag" render={props => (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPostFilter } from '../redux/actions';
 import { BLOG_NAME, CATEGORIES, POST_FILTER_TYPES, CATEGORY_NAMES } from '../constants';
@@ -23,7 +23,7 @@ const Header = ({ postFilter, setPostFilter }) => {
         to="/" 
         onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: CATEGORIES.ALL})} 
       >
-        <h1 >{title}</h1>
+        <h1>{title}</h1>
       </Link>
       <CategoryFilter />
     </header>

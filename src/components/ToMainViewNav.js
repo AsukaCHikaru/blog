@@ -19,14 +19,14 @@ const Nav = ({ category, setPostFilter }) => {
     <nav>          
       <span>></span>
       <Link 
-        to={`/category/${category}`}
-        onClick={()=>setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: category})}
-      >{CATEGORY_NAMES[category.toUpperCase()]}</Link>
-      <span>-</span>
-      <Link 
         to="/"
         onClick={()=>setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: CATEGORIES.ALL})}
       >The work is undone.</Link>
+      <span>-</span>
+      <Link 
+        to={`/category/${category}`}
+        onClick={()=>setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: category})}
+      >{CATEGORY_NAMES[category.toUpperCase()]}</Link>
     </nav>
   );
 }
