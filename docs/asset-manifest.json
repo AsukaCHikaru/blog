@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5dfd9b35.chunk.css",
+    "main.js": "/static/js/main.16094cb4.chunk.js",
+    "main.js.map": "/static/js/main.16094cb4.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.bc0acce7.chunk.js": "/static/js/2.bc0acce7.chunk.js",
+    "static/js/2.bc0acce7.chunk.js.map": "/static/js/2.bc0acce7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.886dc1e4e21b770424c63b6262b943fd.js": "/precache-manifest.886dc1e4e21b770424c63b6262b943fd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5dfd9b35.chunk.css.map": "/static/css/main.5dfd9b35.chunk.css.map",
+    "static/media/a-rather-easy-way-to-implement-quicksort-in-js.md": "/static/media/a-rather-easy-way-to-implement-quicksort-in-js.f1c8e7a7.md",
+    "static/media/day-of-destiny.md": "/static/media/day-of-destiny.fb4adaf8.md",
+    "static/media/dev-diary-aura.md": "/static/media/dev-diary-aura.bab482e3.md",
+    "static/media/devotion.md": "/static/media/devotion.a1c02531.md",
+    "static/media/download-progress-tool-in-terminal-using-nodejs.md": "/static/media/download-progress-tool-in-terminal-using-nodejs.b07b2c72.md",
+    "static/media/farewell-battlenet.md": "/static/media/farewell-battlenet.e956a07a.md",
+    "static/media/ghibli.md": "/static/media/ghibli.43a730e6.md",
+    "static/media/hkt-theaters.md": "/static/media/hkt-theaters.35db37cf.md",
+    "static/media/road-to-plat.md": "/static/media/road-to-plat.2a21e1a5.md",
+    "static/media/so-fedc.md": "/static/media/so-fedc.aedfd0e0.md",
+    "static/media/sotsugyou.md": "/static/media/sotsugyou.7aa9ab9f.md",
+    "static/media/spring-finals.md": "/static/media/spring-finals.940f697f.md",
+    "static/media/the-stone.md": "/static/media/the-stone.e3709e48.md",
+    "static/media/this-city-raised-madoka.md": "/static/media/this-city-raised-madoka.09be2100.md",
+    "static/media/whipser-of-the-heart.md": "/static/media/whipser-of-the-heart.fd162711.md",
+    "static/media/zelda-botw.md": "/static/media/zelda-botw.4c04a3af.md"
+  }
+}

@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700,900&display=swap');
 
 html, body{
   margin: 0;
-  background-color: #eee;
   height: 100%;
+  background-color: #eee;
+  font-family: 'Noto Serif JP', serif;
 }
 #root{
   height: 100%;
@@ -27,8 +30,10 @@ header a:visited{
   color: #000;
 }
 header h1{
+  margin: 0 0 0.5em 0;
   font-size: 3em;
-  margin: 0 0 0.2em 0;
+  font-weight: 900;
+  line-height: 1em;
 }
 
 .categoryFilter .category{
@@ -76,7 +81,7 @@ header h1{
 .postlink .date, .postlink .tags span{
   display: inline-block;
   margin: 0 0.6em;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
   color: #555;
@@ -97,7 +102,7 @@ header h1{
 
 footer{
   flex-shrink: 0;
-  margin: 1em 0;
+  margin: 3em 0;
   font-family: 'Courier New', Courier, monospace;  
 }
 footer a, footer a:visited{
@@ -106,4 +111,25 @@ footer a, footer a:visited{
 }
 footer a:hover{
   text-decoration: underline;
+}
+
+@media all and (max-width: 1200px){
+  .app{
+    font-size: 13px;
+    padding: 0 10.5vw;
+  }
+}
+
+@media all and (max-width: 768px){
+  .app{
+    font-size: 12px;
+    padding: 0 10vw;
+  }
+}
+
+@media all and (max-width: 420px){
+  .app{
+    font-size: 10px;
+    padding: 0 5vw;
+  }
 }

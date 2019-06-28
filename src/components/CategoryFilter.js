@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { setPostFilter } from '../redux/actions';
 import { POST_FILTER_TYPES, CATEGORIES, CATEGORY_NAMES } from '../constants';
 
-import '../style/CategoryFilter.css';
-
 const mapStateToProps = state => {
   const { postFilter } = state;    
   return { postFilter };
@@ -22,13 +20,13 @@ const CategoryFilter = ({ postFilter, setPostFilter }) => {
     return (
       <Link 
         to={path} 
-        key={`cat-${i}`}         
+        key={`cat-${i}`}      
       >
         <h3
           className={(thisCategory===postFilter.context) ? 'current category' : 'category'}
           onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: thisCategory})}
         >
-          {CATEGORY_NAMES[category].toUpperCase()}
+          {CATEGORIES[category].toUpperCase()}
         </h3> 
       </Link>      
     )

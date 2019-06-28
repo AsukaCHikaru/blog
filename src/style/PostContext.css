@@ -9,7 +9,8 @@
 .postcontext h1{
   font-weight: 400;
   font-size: 2.7em;
-  margin-bottom: 0;
+  line-height: 1.2em;
+  margin-bottom: 0.1em;
 }
 
 .postcontext .date, .postcontext .tags{
@@ -34,7 +35,8 @@
   text-decoration: underline;
 }
 article{
-  font-size: 1.1em
+  font-size: 1em;  
+  line-height: 1.7em;
 }
 article p:first-child{
   display: none;

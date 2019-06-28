@@ -3,7 +3,7 @@ date: 2017-05-01
 title: "The Stone"
 slug: the-stone
 tags: League of Legends, 坂本真綾
-category: game
+category: gaming
 
 我還記得第一次玩Taliyah的時候。
 

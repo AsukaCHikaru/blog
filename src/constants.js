@@ -5,16 +5,16 @@ export const POST_FILTER_TYPES = {
 
 export const CATEGORIES = {
   ALL: 'all',
-  OTHERS: 'others',
-  GAME: 'game',
+  GAMING: 'gaming',
   PROGRAMMING: 'programming',
+  OTHERS: 'others',
 };
 
 export const CATEGORY_NAMES = {
   ALL: 'All',
+  GAMING: 'Gaming is passion',
+  PROGRAMMING: 'The unproven trail',
   OTHERS: 'Only words remain',
-  GAME: 'Gaming is passion',
-  PROGRAMMING: 'The unproven trail'
 };
 
 export const BLOG_NAME = 'The work is undone.'
