@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "version": "0.1.0",
+  "homepage": "https://asukachikaru.github.io/blog",
   "private": true,
   "dependencies": {
     "marked": "^0.6.2",
@@ -18,8 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync ./build s3://blog.asukachikaru.com",
-    "fullbuild": "npm run build && npm run deploy"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deployaws": "aws s3 sync ./build s3://blog.asukachikaru.com",
+    "fullbuild": "npm run build && npm run deployaws"
   },
   "eslintConfig": {
     "extends": "react-app"
