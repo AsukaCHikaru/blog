@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Tags from './Tags';
 import ToMainViewNav from './ToMainViewNav';
 
-import handleContext from '../logic/handleContext';
+import { handleContext } from '../logic/handleContext';
 
 import '../style/PostContext.css';
 
