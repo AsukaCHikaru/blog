@@ -2,7 +2,7 @@ author: asukachikaru
 date: 2019-08-08
 title: "Things I learned after building 5 React.js apps"
 slug: things-i-learned-after-building-5-react-apps
-tags: JavaScript
+tags: JavaScript, React.js
 category: programming
 
 ### TLDR: 
@@ -13,7 +13,7 @@ category: programming
 So since I began learning React.js, I've built about 5 or 6 apps using it. I will say, during the starting of my time with React, I struggled a lot. To understand React, I have to have basic knowledge of, for example, the concept of Webpack (and the overwhelming config docs), virtual dom, JSX, state machine... all were new things to me. Fortunately, I got some advice from seniors, then I felt like I was finally on the right way of learning React for the first time. Through this article, I hope to help people in similar situations.
 
 ## For a beginner, Create-React-App solves a lot of problems.
-The advice I mentioned earlier was "Just use Create-React-App".<br>
+The advice I mentioned earlier was "Just use [Create-React-App](https://facebook.github.io/create-react-app/)".<br>
 
 Yeah, just like that. <br>
 

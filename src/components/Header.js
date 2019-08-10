@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPostFilter } from '../redux/actions';
@@ -15,19 +15,31 @@ const mapDispatchToProps = {
   setPostFilter
 }
 
-const Header = ({ postFilter, setPostFilter }) => {
-  const title = BLOG_NAME;
-  return (
-    <header>
-      <Link 
-        to="/" 
-        onClick={() => setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: CATEGORIES.ALL})} 
-      >
-        <h1>{title}</h1>
-      </Link>
-      <CategoryFilter />
-    </header>
-  )
+class Header extends Component {
+
+  componentWillMount(){
+    // console.log(this.props.location.pathname);
+    // const postFilter = {
+    //   type: undefined,
+    //   context: undefined
+    // };
+
+    
+  }
+  render(){
+    const title = BLOG_NAME;
+    return (
+      <header>
+        <Link 
+          to="/" 
+          onClick={() => this.props.setPostFilter({type: POST_FILTER_TYPES.CATEGORY, context: CATEGORIES.ALL})} 
+        >
+          <h1>{title}</h1>
+        </Link>
+        <CategoryFilter />
+      </header>
+    )
+  }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

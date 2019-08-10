@@ -33,9 +33,6 @@ export const handleContext = (text) => {
   
   while (preParsedLink.exec(context)!==null) {
     context = context.replace(preParsedLink, targetStrLink);
-    console.log(preParsedLink.exec(context));
-      
-    // context = context.replace(preParsedLink, targetStrLink);
   }
 
   return context;
