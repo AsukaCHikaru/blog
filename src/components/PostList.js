@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { CATEGORIES, POST_FILTER_TYPES, CATEGORY_NAMES } from "../constants";
+import { CATEGORIES, POST_FILTER_TYPES } from "../constants";
 import { setPostFilter } from "../redux/actions";
 import PostLink from "./PostLink";
 

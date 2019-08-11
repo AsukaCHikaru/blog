@@ -4,7 +4,6 @@ import {
   SET_POST_FILTER,
   SET_POST_READING
 } from "./actionTypes";
-import { CATEGORIES, POST_FILTER_TYPES } from "../constants";
 import { postdata } from "../postdata";
 
 const initialState = {};

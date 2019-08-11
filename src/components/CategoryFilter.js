@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { setPostFilter } from '../redux/actions';
-import { POST_FILTER_TYPES, CATEGORIES, CATEGORY_NAMES } from '../constants';
+import { POST_FILTER_TYPES, CATEGORIES } from '../constants';
 
 const mapStateToProps = state => {
   const { postFilter } = state;    

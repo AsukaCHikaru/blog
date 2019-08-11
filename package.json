@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "marked": "^0.7.0",
+    "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -19,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "node npm src/buildPostdata.js && run build",
     "deploy": "aws s3 sync ./build s3://blog.asukachikaru.com",
     "fullbuild": "npm run build && npm run deploy"
   },

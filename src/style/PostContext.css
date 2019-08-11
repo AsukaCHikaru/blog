@@ -1,119 +1,123 @@
-.postcontext{
+.postcontext {
   font-size: 1.2em;
 }
 
-.postcontext header{
+.postcontext header {
   margin-bottom: 2em;
 }
 
-.postcontext h1{
+.postcontext h1 {
   font-weight: 400;
   font-size: 2.7em;
   line-height: 1.2em;
   margin-bottom: 0.1em;
 }
 
-.postcontext .date, .postcontext .tags{
+.postcontext .date,
+.postcontext .tags {
   display: inline-block;
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 100;
   font-size: 0.95em;
   color: #555;
 }
-.postcontext .date, .postcontext .tags span{
+.postcontext .date,
+.postcontext .tags span {
   margin: 0 0.4em;
 }
-.postcontext .date{
+.postcontext .date {
   margin-left: 0;
   font-weight: 700;
 }
-.postcontext .tags a{
+.postcontext .tags a {
   font-size: 1em;
 }
-.postcontext .tags a:hover{
+.postcontext .tags a:hover {
   text-decoration: underline;
 }
-article{
-  font-size: 1em;  
+article {
+  font-size: 1em;
   line-height: 1.8em;
 }
-article p:first-child{
+article p:first-child {
   display: none;
 }
-article h3{
+article h3 {
   margin: 0.5em 0;
   font-size: 1em;
 }
-article a{
+article a {
   color: #0d69da;
   text-decoration: none;
 }
-article .imgWrapper{
+article .imgWrapper {
   margin: 0 auto;
   width: 55vw;
   text-align: center;
 }
-article a:hover{
+article a:hover {
   text-decoration: underline;
 }
-article code{
+article code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  color: #eee;
+  background-color: #333;
+  border-radius: 0.2em;
+}
+article > p > code, article li > code{
   padding: 0 0.2em;
-  line-height: 0.5em;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9em;
-  color: crimson;
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  border-radius: 0.2em;  
+  margin: 0 0.1em;
+  line-height: 1em;
+  border: 1px solid #aaa;
 }
-article pre {
-  padding: 0 0.2em;
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  border-radius: 0.2em;  
+article > pre {
+  padding: 0.5em 1em;
+  line-height: 1.5em;
+  background-color: #333;
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
 }
-article pre code{
-  border: none;
-}
-article hr{
+article hr {
   margin: 2em auto;
   width: 20%;
 }
-blockquote p:first-child{
+blockquote p:first-child {
   display: inline;
 }
-blockquote p{
+blockquote p {
   font-style: italic;
   color: #555;
 }
-article iframe{
+article iframe {
   outline: none;
   border: none;
   width: 100%;
   height: 100%;
 }
-.youtube{
+.youtube {
   margin: 0 auto;
-  width: 55vw; 
+  width: 55vw;
   height: 30.1vw;
 }
-.postcontext nav{
+.postcontext nav {
   display: block;
   margin: 3em 0 1em 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2em;
 }
-.postcontext nav a, .postcontext nav a:visited{
+.postcontext nav a,
+.postcontext nav a:visited {
   color: #000;
   text-decoration: none;
 }
-.postcontext nav a:hover{
+.postcontext nav a:hover {
   text-decoration: underline;
 }
-.postcontext nav span{
+.postcontext nav span {
   margin: 0 0.5em;
 }
-.postcontext nav span:first-child{
+.postcontext nav span:first-child {
   margin-left: 0;
 }

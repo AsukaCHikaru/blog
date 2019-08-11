@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setPostFilter } from '../redux/actions';
-import { BLOG_NAME, CATEGORIES, POST_FILTER_TYPES, CATEGORY_NAMES } from '../constants';
+import { BLOG_NAME, CATEGORIES, POST_FILTER_TYPES } from '../constants';
 
 import CategoryFilter from './CategoryFilter';
 

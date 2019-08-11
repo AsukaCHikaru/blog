@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Prism from "prismjs";
+
+import '../style/prism.css';
 
 import { handleContext } from "../logic/handleContext";
 
@@ -11,6 +14,9 @@ export default class Article extends Component {
   }
   componentWillMount() {
     if (this.state.context === null) this.fetch();
+  }
+  componentDidMount(){
+    Prism.highlightAll();
   }
   fetch() {
     const fileName = this.props.post;
