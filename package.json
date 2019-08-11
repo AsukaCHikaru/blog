@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "node npm src/buildPostdata.js && run build",
+    "predeploy": "node src/buildPostdata.js && npm run build",
     "deploy": "aws s3 sync ./build s3://blog.asukachikaru.com",
     "fullbuild": "npm run build && npm run deploy"
   },

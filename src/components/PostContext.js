@@ -22,11 +22,15 @@ class PostContext extends Component {
     this.parsePathToPostReading(this.props.location.pathname);
   }
   parsePathToPostReading = path => {
-    const postName = path.replace(/\/post\/(.+)/, '$1');
+    const postName = path.replace(/\/post\/(.+)/, "$1");
     const postReading = this.props.allPostData.all.find(post => {
-      return post.path.replace(/(.+)\/.+/, '$1')===postName;
+      return post.path.replace(/(.+)\/.+/, "$1") === postName;
     });
-    if(this.props.postReading.path===undefined) this.props.setPostReading(postReading);
+    if (
+      this.props.postReading.path === undefined ||
+      this.props.postReading.path !== postReading.path
+    )
+      this.props.setPostReading(postReading);
   };
 
   render() {
