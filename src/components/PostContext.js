@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Helmet } from "react-helmet";
 
 import Tags from "./Tags";
 import ToMainViewNav from "./ToMainViewNav";
@@ -34,8 +35,17 @@ class PostContext extends Component {
   };
 
   render() {
+    const keywords =
+      this.props.postReading.tags === undefined
+        ? []
+        : [...this.props.postReading.tags, this.props.postReading.category];
+
     return (
       <div className="postcontext">
+        <Helmet>
+          <title>{`${this.props.postReading.title} | The work is undone.`}</title>
+          <meta name="keywords" content={keywords.join(", ")} />
+        </Helmet>
         <header>
           <h1>{this.props.postReading.title}</h1>
           <h3 className="date">{this.props.postReading.date}</h3>
