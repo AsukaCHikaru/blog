@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "node src/buildPostdata.js && npm run build",
-    "deploy": "aws s3 sync ./build s3://blog.asukachikaru.com",
+    "deploy": "aws s3 sync ./build $AWS_S3_BUCKET_NAME_BLOG",
     "fullbuild": "npm run build && npm run deploy"
   },
   "eslintConfig": {
