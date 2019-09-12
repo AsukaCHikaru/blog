@@ -21,7 +21,9 @@ const mapDispatchToProps = {
 class PostContext extends Component {
   componentDidMount() {
     this.parsePathToPostReading(this.props.location.pathname);
+    console.log(`https://blog.asukachikaru.com${this.props.location.pathname}`);
   }
+  
   parsePathToPostReading = path => {
     const postName = path.replace(/\/post\/(.+)/, "$1");
     const postReading = this.props.allPostData.all.find(post => {
@@ -38,13 +40,20 @@ class PostContext extends Component {
     const keywords =
       this.props.postReading.tags === undefined
         ? []
-        : [...this.props.postReading.tags, this.props.postReading.category];
-
+        : [...this.props.postReading.tags, this.props.postReading.category];    
     return (
       <div className="postcontext">
         <Helmet>
           <title>{`${this.props.postReading.title} | The work is undone.`}</title>
+          <meta name="title" content={this.props.postReading.title} />
           <meta name="keywords" content={keywords.join(", ")} />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={`https://blog.asukachikaru.com${this.props.location.pathname}`} />
+          <meta property="og:title" content={this.props.postReading.title} />
+
+          <meta property="twitter:url" content={`https://blog.asukachikaru.com${this.props.location.pathname}`} />
+          <meta property="twitter:title" content={this.props.postReading.title} />          
         </Helmet>
         <header>
           <h1>{this.props.postReading.title}</h1>
