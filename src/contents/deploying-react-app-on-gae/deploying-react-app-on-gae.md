@@ -23,7 +23,7 @@ Literally, [serve](https://github.com/zeit/serve).
 
 Notice serve needs static files to run, so we need to build it first. Since GAE only runs two scripts, and building takes some time too, so I bound it to `postinstall` instead of `prestart` . By this way, GAE automatically builds right after it installs dependencies.
 
-You can also use some host framework (like express) to do the hosting and routing stuff too.
+You can also use some host framework (like [express](https://github.com/expressjs/express)) to do the hosting and routing stuff too.
 
 ## Config the port
 
@@ -36,6 +36,6 @@ The scripts in `package.json` I used when finally successfully deployed looks li
       "start": "serve -l 8080 -s build"
     }
 
-You need to configure app.yaml too, but I think many resources is talking about how to do it.
+You need to configure app.yaml too, but I think there are many resources  talking about how to do it.
 
 I hope this helps!
