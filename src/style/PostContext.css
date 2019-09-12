@@ -62,15 +62,15 @@ article a:hover {
 article code {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
-  color: #eee;
-  background-color: #333;
+  color: #333;
+  background-color: #ddd;
   border-radius: 0.2em;
 }
 article > p > code, article li > code{
   padding: 0 0.2em;
   margin: 0 0.1em;
   line-height: 1em;
-  border: 1px solid #aaa;
+  border: 1px solid #ddd;
 }
 article > pre {
   padding: 0.5em 1em;
@@ -78,6 +78,10 @@ article > pre {
   background-color: #333;
   border: 1px solid #aaa;
   border-radius: 0.5em;
+}
+article > pre > code{
+  background-color: #333;
+  color: #bbb;
 }
 article hr {
   margin: 2em auto;
